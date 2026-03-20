@@ -1,6 +1,6 @@
 import {create} from "zustand"
 
-type PlayerSetupState = {
+export type PlayerSetupState = {
     name: string
     color: string
     emoji: string
@@ -9,3 +9,4 @@ type PlayerSetupState = {
     setEmoji: (emoji: string) => void
 
 }
+
