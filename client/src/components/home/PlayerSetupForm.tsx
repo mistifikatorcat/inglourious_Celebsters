@@ -7,6 +7,8 @@ import { useRoomStore } from "../../store/useRoomStore";
 
 export function PlayerSetupForm() {
   const name = usePlayerSetupStore((state) => state.name);
+  const color = usePlayerSetupStore((state) => state.color);
+  const emoji = usePlayerSetupStore((state) => state.emoji)
   const setName = usePlayerSetupStore((state) => state.setName);
   const setPhase = useRoomStore((state) => state.setPhase);
   const setRoom = useRoomStore((state) => state.setRoom);
@@ -24,8 +26,8 @@ export function PlayerSetupForm() {
         {
           id: "you",
           name,
-          color: "#f4c542",
-          emoji: "😎",
+          color,
+          emoji,
           isHost: true,
           isReady: false,
         },

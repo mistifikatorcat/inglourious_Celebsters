@@ -1,4 +1,4 @@
-import { PLAYER_COLORS } from "../../lib/constants";
+import { PLAYER_COLORS } from "../../lib/contants";
 import { usePlayerSetupStore } from "../../store/usePlayerSetupStore";
 
 export function ColorPicker() {

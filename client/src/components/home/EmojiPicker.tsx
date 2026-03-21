@@ -1,4 +1,4 @@
-import { PLAYER_EMOJIS } from "../../lib/constants";
+import { PLAYER_EMOJIS } from "../../lib/contants";
 import { usePlayerSetupStore } from "../../store/usePlayerSetupStore";
 
 export function EmojiPicker() {

@@ -1,25 +1,12 @@
-import { PageShell } from "../../components/layout/PageShell";
-import { LobbyHeader } from "../../components/lobby/LobbyHeader";
-import { PlayerGrid } from "../../components/lobby/PlayerGrid";
-import { RoomCodeCard } from "../../components/lobby/RoomCodeCard";
-import { EventLog } from "../../components/lobby/EventLog";
-import { LobbyActions } from "../../components/lobby/LobbyActions";
-
-export function LobbyPage() {
+export function GameTitle() {
   return (
-    <PageShell>
-      <div className="grid w-full max-w-6xl gap-6 lg:grid-cols-[2fr_1fr]">
-        <section className="space-y-6">
-          <LobbyHeader />
-          <PlayerGrid />
-        </section>
-
-        <aside className="space-y-6">
-          <RoomCodeCard />
-          <EventLog />
-          <LobbyActions />
-        </aside>
-      </div>
-    </PageShell>
+    <div className="space-y-2 text-center">
+      <h1 className="text-4xl font-black tracking-wide text-[var(--accent)] md:text-5xl">
+        Inglorious Celebsters
+      </h1>
+      <p className="text-sm text-[var(--text-muted)] md:text-base">
+        Guess who you are by asking the right questions
+      </p>
+    </div>
   );
 }
