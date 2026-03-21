@@ -10,3 +10,11 @@ export type PlayerSetupState = {
 
 }
 
+export const usePlayerSetupStore = create<PlayerSetupState>((set) => ({
+  name: "",
+  color: "#f4c542",
+  emoji: "😎",
+  setName: (name) => set({ name }),
+  setColor: (color) => set({ color }),
+  setEmoji: (emoji) => set({ emoji }),
+}));
